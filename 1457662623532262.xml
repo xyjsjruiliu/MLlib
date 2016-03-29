@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile id="1457662623532262" type="OrgProfile">
+	<name>日本蜻蜓牌口琴</name>
+	<source doc="data//cul.qq.com.藏家收藏国产口琴1000余把 每把背后都有故事.txt" id="36" pubtime="20160311101703" realtime="19330000000000">”而他收藏的日本蜻蜓牌口琴数量不少，在这把口琴之前制造的口琴上，仅仅有描绘日本风光的图案，富士山等名胜常常出现。</source>
+	<mergeCount>0</mergeCount>
+	<mentions>1</mentions>
+	<vip>false</vip>
+	<relation type="CeCoexist_ORG_LOC">
+		<link>
+			<ne id="1457662623532245">日本</ne>
+			<source doc="data//cul.qq.com.藏家收藏国产口琴1000余把 每把背后都有故事.txt" id="36" pubtime="20160311101703" realtime="19330000000000"></source>
+		</link>
+		<link>
+			<ne id="1457662623532263">富士山</ne>
+			<source doc="data//cul.qq.com.藏家收藏国产口琴1000余把 每把背后都有故事.txt" id="36" pubtime="20160311101703" realtime="19330000000000"></source>
+		</link>
+	</relation>
+	<relation type="CeLOCATION">
+		<link>
+			<ne id="1457662623532245">日本</ne>
+			<source doc="data//cul.qq.com.藏家收藏国产口琴1000余把 每把背后都有故事.txt" id="36" pubtime="20160311101703" realtime="19330000000000"></source>
+		</link>
+	</relation>
+</profile>

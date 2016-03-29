@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tok id="138" type="group">
+	<tok id="121" type="group">
+		<foot/>
+		<tok id="53" type="atom" soff="132" eoff="134">
+			入
+			<norm/>
+			<tok-normal-forms/>
+			<fea/>
+		</tok>
+		<lead/>
+		<tok id="54" type="atom" soff="135" eoff="137">
+			门
+			<norm/>
+			<tok-normal-forms/>
+			<fea/>
+		</tok>
+		<norm/>
+		<tok-normal-forms/>
+		<fea>
+			<f>v</f>
+		</fea>
+	</tok>
+	<tok id="57" type="atom" soff="144" eoff="146">
+		季
+		<norm/>
+		<tok-normal-forms/>
+		<fea>
+			<f>q</f>
+		</fea>
+	</tok>
+	<fea>
+		<f>Ne_Noun</f>
+		<f>NePublication</f>
+		<f>NEORG_stopword</f>
+	</fea>
+</tok>
