@@ -5,6 +5,9 @@ package com.xy.lr.java.lda.main;
  * @blog http://blog.csdn.net/yangliuy
  * @mail yangliuyx@gmail.com
  */
+import com.xy.lr.java.lda.com.FileUtil;
+import com.xy.lr.java.lda.conf.PathConfig;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,9 +15,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
-import com.xy.lr.java.lda.conf.*;
-import com.xy.lr.java.lda.com.FileUtil;
 
 public class LdaModel {
 	
@@ -197,6 +197,7 @@ public class LdaModel {
 		//lda.theta M*K
 		writer = new BufferedWriter(new FileWriter(resPath + modelName + ".theta"));
 		for(int i = 0; i < M; i++){
+			writer.write(docSet.docs.get(i).getDocName() + ":");
 			for(int j = 0; j < K; j++){
 				writer.write(theta[i][j] + "\t");
 			}
@@ -225,7 +226,10 @@ public class LdaModel {
 			Collections.sort(tWordsIndexArray, new TwordsComparable(phi[i]));
 			writer.write("topic " + i + "\t:\t");
 			for(int t = 0; t < topNum; t++){
-				writer.write(docSet.indexToTermMap.get(tWordsIndexArray.get(t)) + " " + phi[i][tWordsIndexArray.get(t)] + "\t");
+
+				writer.write(
+						docSet.indexToTermMap.get(tWordsIndexArray.get(t)) + " "
+						+ phi[i][tWordsIndexArray.get(t)] + "\t");
 			}
 			writer.write("\n");
 		}

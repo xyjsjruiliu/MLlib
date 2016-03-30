@@ -1,14 +1,13 @@
 package com.xy.lr.java.lda.main;
 
+import com.xy.lr.java.lda.com.FileUtil;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import com.xy.lr.java.lda.com.*;
-import com.xy.lr.java.lda.com.FileUtil;
 
 /**Class for corpus which consists of M documents
  * @author yangliu
@@ -40,6 +39,10 @@ public class Documents {
 	public static class Document {	
 		private String docName;
 		int[] docWords;
+
+		public String getDocName() {
+			return this.docName;
+		}
 		
 		public Document(String docName, Map<String, Integer> termToIndexMap, ArrayList<String> indexToTermMap, Map<String, Integer> termCountMap){
 			this.docName = docName;

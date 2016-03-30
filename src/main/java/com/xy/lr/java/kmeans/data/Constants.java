@@ -6,9 +6,9 @@ package com.xy.lr.java.kmeans.data;
  */
 public class Constants {
 	//输入文件路径
-	public static final String sourceFilePath = "data/clustering.txt";
+	public static final String sourceFilePath = "data/K-means/input.txt";
 	//输出文件路径
-	public static final String destinationFilePath = "data/Output_Missing_Values.csv";
+	public static final String destinationFilePath = "data/K-means/output.csv";
 	//聚类中心个数
 	public static final int centriodCount = 10;
 	//阈值

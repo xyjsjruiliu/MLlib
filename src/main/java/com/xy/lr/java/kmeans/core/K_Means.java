@@ -1,12 +1,10 @@
 package com.xy.lr.java.kmeans.core;
 
+import com.xy.lr.java.kmeans.data.Centroid;
+import com.xy.lr.java.kmeans.data.DataPoint;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.xy.lr.java.kmeans.data.Centroid;
-import com.xy.lr.java.kmeans.data.CentroidVector;
-import com.xy.lr.java.kmeans.data.DataPoint;
-import com.xy.lr.java.kmeans.data.DataVector;
 
 /**
  * @author xylr

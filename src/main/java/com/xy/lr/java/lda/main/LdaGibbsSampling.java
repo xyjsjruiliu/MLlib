@@ -1,11 +1,12 @@
 package com.xy.lr.java.lda.main;
 
+import com.xy.lr.java.lda.com.FileUtil;
+import com.xy.lr.java.lda.conf.ConstantConfig;
+import com.xy.lr.java.lda.conf.PathConfig;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
-import com.xy.lr.java.lda.conf.*;
-import com.xy.lr.java.lda.com.FileUtil;
 
 /**Liu Yang's implementation of Gibbs Sampling of LDA
  * @author yangliu
@@ -80,6 +81,7 @@ public class LdaGibbsSampling {
 		Documents docSet = new Documents();
 		docSet.readDocs(originalDocsPath);
 		System.out.println("wordMap size " + docSet.termToIndexMap.size());
+
 		FileUtil.mkdir(new File(resultPath));
 		LdaModel model = new LdaModel(ldaparameters);
 		System.out.println("1 Initialize the model ...");
