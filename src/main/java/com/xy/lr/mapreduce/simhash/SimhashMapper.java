@@ -14,18 +14,26 @@ import java.io.IOException;
  */
 public class SimhashMapper extends
         Mapper<LongWritable, Text, Text, Text> {
+  //计算文本simhash值
   private static Simhash simhash = new Simhash(new ChineseInfoWordSeg());
 
   @Override
   public void map (LongWritable key, Text value, Context context) {
     String eachLine = value.toString();
+    if (eachLine.split("\t").length != 2) {
 
-    try {
-      context.write(new Text(""),new Text(simhash.simhash64(eachLine)));
-    } catch (IOException e) {
-      e.printStackTrace();
-    } catch (InterruptedException e) {
-      e.printStackTrace();
+    } else {
+      //文章编号
+      String documentID = eachLine.split("\t")[0];
+      //文章分词结果
+      String documentWordSeg = eachLine.split("\t")[1];
+      try {
+        context.write(new Text("Simhash"),new Text(documentID + ":" + simhash.simhash64(documentWordSeg)));
+      } catch (IOException e) {
+        e.printStackTrace();
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
     }
   }
 }

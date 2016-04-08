@@ -1,4 +1,4 @@
-package com.xy.lr.java.tfidf.mapreduce.tfidffrequency;
+package com.xy.lr.mapreduce.tfidf.tfidffrequency;
 
 import java.io.IOException;
 import java.util.regex.Matcher;

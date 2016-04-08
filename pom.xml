@@ -51,11 +51,11 @@
       <artifactId>hadoop-common</artifactId>
       <version>2.6.0</version>
     </dependency>
-    <!--<dependency>
+    <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-core</artifactId>
       <version>2.6.0</version>
-    </dependency>-->
+    </dependency>
     <!--<dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-yarn-api</artifactId>
@@ -108,7 +108,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.xy.lr.java.nlp.wordsegment.XMLParserTest</mainClass>
+              <mainClass>com.xy.lr.mapreduce.simhash.SimhashImpl</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

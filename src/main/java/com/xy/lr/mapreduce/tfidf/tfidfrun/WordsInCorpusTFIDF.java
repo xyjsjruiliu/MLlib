@@ -1,4 +1,4 @@
-package com.xy.lr.java.tfidf.mapreduce.tfidfrun;
+package com.xy.lr.mapreduce.tfidf.tfidfrun;
 
 /**
  * Created by xylr on 16-3-21.
