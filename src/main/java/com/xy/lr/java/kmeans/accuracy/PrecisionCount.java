@@ -11,7 +11,9 @@ public class PrecisionCount {
 
 	public static void main(String[] args) throws IOException {
 		PrecisionCount totalcount=new PrecisionCount();
-		double precision=totalcount.count("data/standard", "data/result");
+//		double precision=totalcount.count("data/standard", "data/result");
+		double precision=totalcount.count("data/K-means/resources/",
+						"data/K-means/Clustering/");
 		System.out.println("准确率"+precision);
 	}
 	/**
@@ -31,7 +33,7 @@ public class PrecisionCount {
     			correctSum+=countCluster(file,standard);
     			System.out.println("正确数"+correctSum);
     		}
-    		 precision=correctSum/56742;
+    		 precision=correctSum/47958;
     		}
 		return precision;
 	}

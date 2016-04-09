@@ -32,6 +32,26 @@ public class JAccuracy {
         File edu = new File(EDU);
 
         ArrayList<String> lines = JFile.getAllLines(auto, "utf-8");
+      ArrayList<String> lines1 = JFile.getAllLines(sport, "utf-8");
+      ArrayList<String> lines2 = JFile.getAllLines(house, "utf-8");
+      ArrayList<String> lines3 = JFile.getAllLines(finance, "utf-8");
+      ArrayList<String> lines4 = JFile.getAllLines(digi, "utf-8");
+      ArrayList<String> lines5 = JFile.getAllLines(tech, "utf-8");
+      ArrayList<String> lines6 = JFile.getAllLines(ent, "utf-8");
+      ArrayList<String> lines7 = JFile.getAllLines(fashion, "utf-8");
+      ArrayList<String> lines8 = JFile.getAllLines(eul, "utf-8");
+      ArrayList<String> lines9 = JFile.getAllLines(edu, "utf-8");
+//      print(lines);
+//      saveID(lines, "auto");
+      saveID(lines1, "sport");
+      saveID(lines2, "house");
+      saveID(lines3, "finance");
+      saveID(lines4, "digi");
+      saveID(lines5, "tech");
+      saveID(lines6, "ent");
+      saveID(lines7, "fashion");
+      saveID(lines8, "eul");
+      saveID(lines9, "edu");
     }
 
   /**
@@ -41,6 +61,19 @@ public class JAccuracy {
   public Map<String, List<String>> getMaps() {
         return maps;
     }
+
+  private void print(ArrayList<String> list) {
+    for (String string : list) {
+      System.out.println(string);
+    }
+  }
+
+  private void saveID(ArrayList<String> list, String i) {
+    for (String string : list) {
+      String id = string.split("\t")[0];
+      JFile.appendFile("data/K-means/resources/" + i, id);
+    }
+  }
 
   /**
    *
