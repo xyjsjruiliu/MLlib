@@ -1,10 +1,7 @@
 package com.xy.lr.java.tfidf;
 
-import com.xy.lr.java.tfidf.main.JTF_IDF;
 import com.xy.lr.java.tfidf.main.JTF_IDFUtil;
 import com.xy.lr.java.tools.time.DateTime;
-
-import java.io.File;
 
 /**
  * Created by xylr on 16-3-21.
@@ -14,9 +11,9 @@ public class App {
         System.out.println("程序开始：");
         long a = DateTime.CurrentTime();
 
-//        JTF_IDFUtil.cal_TFIDF("/home/xylr/Working/IdeaProjects/KnowLedgeBase/data/",
-//                "data/TFIDF/tfidfs.txt",
-//                "data/TFIDF/");
+        /*JTF_IDFUtil.cal_TFIDF("/home/xylr/Working/IdeaProjects/KnowLedgeBase/data/",
+                "data/TFIDF/tfidfs.txt",
+                "data/TFIDF/");*/
 
 //        JTF_IDFUtil.makeVector("data/TFIDF/tfidfs.txt", "data/TFIDF/vector.txt", 10);
 
