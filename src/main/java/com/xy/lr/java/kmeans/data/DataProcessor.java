@@ -11,7 +11,7 @@ import java.util.List;
 public class DataProcessor {
     public static void main(String[] args) {
         List<String> fileList = JFile.getAllLines(new File("/home/xylr/Working/" +
-                "workspace/MLlib/data/Output_Missing_Values.csv"), "utf-8");
+                "workspace/MLlib/data/K-means/output.csv"), "utf-8");
 
         for(String file : fileList) {
             int number = file.lastIndexOf(",");
@@ -24,6 +24,7 @@ public class DataProcessor {
 
             JFile.appendFile("data/Clustering/Clustering_" + clustring + ".txt", num);
         }
+//        new DataProcessor().f1();
     }
 
     public void f1() {
@@ -32,13 +33,11 @@ public class DataProcessor {
 
         System.out.println(fileList.size());
 
-        int count = 0;
         for(String file : fileList) {
             String temp = file.replaceAll("\t", ",");
 
-            temp = count + "," + temp + "1";
+            temp = temp + "1";
 
-            count++;
 
             JFile.appendFile("data/clustering.txt", temp);
 //            System.out.println(temp);

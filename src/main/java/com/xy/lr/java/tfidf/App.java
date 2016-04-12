@@ -11,11 +11,11 @@ public class App {
         System.out.println("程序开始：");
         long a = DateTime.CurrentTime();
 
-        /*JTF_IDFUtil.cal_TFIDF("/home/xylr/Working/IdeaProjects/KnowLedgeBase/data/",
+        /*JTF_IDFUtil.cal_TFIDF("/home/xylr/Working/IdeaProjects/KnowLedgeBase/chineseword/data/",
                 "data/TFIDF/tfidfs.txt",
                 "data/TFIDF/");*/
 
-//        JTF_IDFUtil.makeVector("data/TFIDF/tfidfs.txt", "data/TFIDF/vector.txt", 10);
+//        JTF_IDFUtil.makeVector("data/TFIDF/tfidfs.txt", "data/TFIDF/vector.txt", 20);
 
 //        JTF_IDFUtil.getWords("data/TFIDF/vector.txt");
 
